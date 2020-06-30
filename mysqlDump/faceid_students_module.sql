@@ -1,0 +1,54 @@
+-- MySQL dump 10.13  Distrib 8.0.19, for macos10.15 (x86_64)
+--
+-- Host: localhost    Database: faceid
+-- ------------------------------------------------------
+-- Server version	8.0.15
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!50503 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `students_module`
+--
+
+DROP TABLE IF EXISTS `students_module`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!50503 SET character_set_client = utf8mb4 */;
+CREATE TABLE `students_module` (
+  `MISIS` varchar(10) NOT NULL,
+  `module_id` int(11) NOT NULL,
+  KEY `MISIS_idx` (`MISIS`),
+  KEY `module_id_idx` (`module_id`),
+  CONSTRAINT `MISIS` FOREIGN KEY (`MISIS`) REFERENCES `student` (`MISIS`),
+  CONSTRAINT `module_id` FOREIGN KEY (`module_id`) REFERENCES `module` (`module_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `students_module`
+--
+
+LOCK TABLES `students_module` WRITE;
+/*!40000 ALTER TABLE `students_module` DISABLE KEYS */;
+INSERT INTO `students_module` VALUES ('M00650922',3),('M00650922',1),('M00650922',2),('M00650922',4),('M005675643',2),('M005675643',1),('M00567811',4),('M00567811',1),('M00567811',3),('M00567889',3),('M00567889',1),('M00567899',1),('M00567899',3),('M00650367',3),('M00650367',2),('M00650367',4),('M00659833',3),('M00659833',4),('M00650966',2),('M00650966',3),('M00657893',1),('M00657893',2),('M00657893',3),('M00657893',4);
+/*!40000 ALTER TABLE `students_module` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2020-05-07  1:44:55

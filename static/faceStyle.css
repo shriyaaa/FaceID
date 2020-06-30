@@ -1,0 +1,31 @@
+body {
+    background-color: #c7b5e7;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  canvas {
+    position: absolute;
+  }
+
+  button{
+    font-size: 30px;
+    cursor: pointer;
+    background: #5a2e9b;
+    padding: 10px;
+    position: absolute;
+    right:43%;
+    top: 90%;
+  }
+
+#groupName{
+    position: absolute;
+    font-size: 30px;
+    top: 81%;
+
+}
