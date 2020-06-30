@@ -69,9 +69,9 @@ app.set('view engine','ejs');
 //https://developers.google.com/calendar/overview
 // the above instructions and documentations were followed to connect to google calender
   const oauth2Client = new google.auth.OAuth2(
-    "499805468829-2bsa7cniusekuh1dks39rbvbohbdf5m8.apps.googleusercontent.com",
-    "XN3qq8chFORKXwOVPSUtqRkp",
-    "http://localhost:3000/landing"
+    "*client ID goes here",
+    "*key goes here",
+    "*link to your redirecting page goes here*"
   ); // the client id, key and the redirecting page
   
   
