@@ -8,8 +8,8 @@ const mysql = require('mysql2');
 const db = mysql.createPool({
   host     : 'localhost', // MYSQL HOST NAME
   user     : 'root',        // MYSQL USERNAME
-  password : '12345678',    // MYSQL PASSWORD
-  database : 'faceid'      // MYSQL DB NAME
+  password : 'password',    // MYSQL PASSWORD
+  database : 'dbase'      // MYSQL DB NAME
 }).promise();
 module.exports = db;
 
